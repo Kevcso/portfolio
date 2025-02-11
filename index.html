@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
   </head>
   <body>
     <header>
@@ -45,6 +49,16 @@
           Associate course.
         </p>
       </div>
+
+      <div class="project">
+        <h3>Personal Portfolio Website</h3>
+
+        <p>
+          Built a responsive portfolio website using HTML, CSS and JavaScript to
+          showcase my skills, projects and certifications. Hosted on GitHub
+          Pages.
+        </p>
+      </div>
     </section>
 
     <section id="skills">
@@ -58,7 +72,7 @@
       </ul>
     </section>
 
-    <section>
+    <section id="certifications">
       <h2>Certifications</h2>
       <ul>
         <li>Frontend Development Course by META:</li>
@@ -76,20 +90,36 @@
 
     <section id="contact">
       <h2>Contact</h2>
-      <p>Email: <a href="mailto:kevcso99@gmail.com">kevcso99@gmail.com</a></p>
       <p>
-        LinkedIn:
-        <a href="https://linkedin.com/in/kevcso" target="_blank"
+        <i class="fas fa-envelope"></i> Email:
+        <a href="mailto:kevcso99@gmail.com" class="contact-link"
+          >kevcso99@gmail.com</a
+        >
+      </p>
+      <p>
+        <i class="fab fa-linkedin"></i> LinkedIn:
+        <a
+          href="https://linkedin.com/in/kevcso"
+          target="_blank"
+          rel="noreferrer"
+          class="contact-link"
           >linkedin.com/in/kevcso</a
         >
       </p>
       <p>
-        GitHub:
-        <a href="https://github.com/kevcso" target="_blank"
+        <i class="fab fa-github"></i> GitHub:
+        <a
+          href="https://github.com/kevcso"
+          target="_blank"
+          rel="noreferrer"
+          class="contact-link"
           >github.com/kevcso</a
         >
       </p>
-      <p>Download my CV: <a href="Kevin_CV_eng.pdf" download>Download CV</a></p>
+      <p>
+        <i class="fas fa-download"></i> Download my CV:
+        <a href="Kevin_CV_eng.pdf" download class="download-cv">link</a>
+      </p>
     </section>
   </body>
 </html>
