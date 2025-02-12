@@ -1,31 +1,31 @@
-// Dark Mode Toggle
-const darkModeToggle = document.getElementById("dark-mode-toggle");
-const body = document.body;
+//Back to top button
+const backToTopButton = document.getElementById("back-to-top");
 
-// Check for saved dark mode preference in localStorage
-const isDarkMode = localStorage.getItem("darkMode") === "enabled";
-if (isDarkMode) {
-  body.classList.add("dark-mode");
-  darkModeToggle.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
-}
-
-// Toggle Dark Mode
-darkModeToggle.addEventListener("click", () => {
-  body.classList.toggle("dark-mode");
-
-  // Update button text and save preference to localStorage
-  if (body.classList.contains("dark-mode")) {
-    darkModeToggle.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
-    localStorage.setItem("darkMode", "enabled");
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) {
+    backToTopButton.style.display = "block";
   } else {
-    darkModeToggle.innerHTML = '<i class="fas fa-moon"></i> Dark Mode';
-    localStorage.setItem("darkMode", "disabled");
+    backToTopButton.style.display = "none";
   }
 });
 
-// Check for system preference
-const prefersDarkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
-if (prefersDarkMode && !localStorage.getItem("darkMode")) {
-  body.classList.add("dark-mode");
-  darkModeToggle.innerHTML = '<i class="fas fa-sun"></i> Light Mode';
-}
+backToTopButton.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+});
+
+// Animate On Scroll
+AOS.init({
+  duration: 800,
+  easing: "ease-in-out",
+  once: false,
+});
+
+document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+  anchor.addEventListener("click", function (e) {
+    e.preventDefault();
+    const target = document.querySelector(this.getAttribute("href"));
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+    }
+  });
+});
