@@ -171,3 +171,16 @@ section {
 body {
   transition: background-color 0.4s ease, color 0.4s ease;
 }
+
+nav ul li a {
+  display: inline-block;
+  padding: 10px 15px;
+  color: white;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scale(1.1);
+}
