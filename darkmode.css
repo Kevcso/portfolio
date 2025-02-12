@@ -1,0 +1,55 @@
+/* Dark Mode */
+.dark-mode {
+  --background-color: #1a1a1a;
+  --text-color: #ffffff;
+  --header-bg-color: #111827;
+  --header-text-color: #ffffff;
+  --card-bg-color: #1f2937;
+  --card-border-color: #374151;
+  --contact-bg-color: #1f2937;
+}
+
+/* Dark Mode Overrides */
+body.dark-mode header,
+body.dark-mode section,
+body.dark-mode #projects .card,
+body.dark-mode #contact,
+body.dark-mode .profile-img,
+body.dark-mode #profile h1,
+body.dark-mode #profile p.lead,
+body.dark-mode #skills li,
+body.dark-mode #skills h2,
+body.dark-mode #certifications li,
+body.dark-mode #certifications h2,
+body.dark-mode #certifications p,
+body.dark-mode #projects .card-title,
+body.dark-mode #projects .card-text {
+  color: var(--text-color);
+}
+
+/* Cards in Dark Mode */
+body.dark-mode #projects .card {
+  background-color: var(--card-bg-color);
+  border: 1px solid var(--card-border-color);
+  color: var(--text-color);
+}
+
+body.dark-mode .contact-link {
+  color: #60a5fa;
+}
+
+body.dark-mode .contact-link:hover {
+  color: #3b82f6;
+}
+
+body.dark-mode .btn-primary {
+  background-color: #3b82f6;
+}
+
+body.dark-mode .btn-primary:hover {
+  background-color: #2563eb;
+}
+
+body.dark-mode .profile-img:hover {
+  box-shadow: 0 0 0 4px #60a5fa, 0 8px 16px rgba(255, 255, 255, 0.1);
+}
