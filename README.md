@@ -1,0 +1,1 @@
+This is my personal portfolio website showcasing my projects, skills, and experience. Built using HTML, CSS, JavaScript and Bootstrap. It serves as an online presence and a way to connect with employers.
