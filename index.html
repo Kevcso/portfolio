@@ -59,8 +59,8 @@
           />
           <h1 class="mt-3">Hi, I'm Kevin Kovács</h1>
           <p class="lead">
-            A software developer with a strong focus on software testing,
-            quality assurance and databases.
+            A software developer with a strong focus on frontend development,
+            quality assurance and data analytics.
           </p>
         </div>
       </section>
@@ -85,9 +85,58 @@
           <h2 class="text-center mb-4">Projects</h2>
           <div class="row">
             <div class="col-md-6 mb-4">
-              <div class="card">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title">Smite 2 Build & Guide Platform</h3>
+
+                  <p class="card-text">
+                    A full-stack web application for creating, browsing and
+                    managing character builds for a competitive video game. I
+                    designed and developed the entire platform independently,
+                    covering both frontend and backend responsibilities.
+                    <br /><br />
+
+                    The frontend is built with
+                    <strong>React and TypeScript</strong>, featuring dynamic
+                    routing for gods, items and build detail pages, responsive
+                    layouts and reusable UI components. <br /><br />
+
+                    On the backend, I implemented a
+                    <strong>PostgreSQL</strong> database with normalized
+                    relational schemas and built services to ingest and
+                    synchronize data from an external wiki API. The application
+                    includes <strong>admin-only functionality</strong>
+                    for creating and managing builds.
+                  </p>
+
+                  <ul class="mt-3">
+                    <li><strong>Tech:</strong> React, TypeScript, HTML, CSS</li>
+                    <li><strong>Backend:</strong> Node.js, PostgreSQL</li>
+                    <li>
+                      <strong>Features:</strong> Admin roles, data ingestion,
+                      dynamic pages
+                    </li>
+                  </ul>
+                  <br /><br />
+                  <div class="text-center mt-3">
+                    <a
+                      href="https://github.com/kevcso"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      class="btn btn-primary me-2"
+                    >
+                      <i class="fab fa-github"></i> View Code
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 mb-4">
+              <div class="card h-100">
                 <div class="card-body">
                   <h3 class="card-title">Manual Testing Portfolio Project</h3>
+
                   <p class="card-text">
                     I created a comprehensive
                     <strong>manual testing portfolio</strong> to demonstrate
@@ -116,6 +165,7 @@
                     Progress → In Review → Done) showcasing real-world bug
                     lifecycle management.
                   </p>
+
                   <div class="text-center mt-3">
                     <a
                       href="https://fnatickev.atlassian.net/wiki/external/MjRmMzgzZGNjMmVjNDVhM2E0OTQ3YTRkMWY5NGIyODQ"
@@ -138,32 +188,9 @@
                 </div>
               </div>
             </div>
+
             <div class="col-md-6 mb-4">
-              <div class="card">
-                <div class="card-body">
-                  <h3 class="card-title">Cybersecurity Threat Analysis</h3>
-                  <p class="card-text">
-                    This project gave me hands-on experience in the world of
-                    cybersecurity and network defense. Using
-                    <strong>Wireshark</strong> I analyzed real network traffic
-                    to understand how data moves across systems and how
-                    potential threats can be detected through careful
-                    observation. As part of the
-                    <strong>Cisco CyberOps Associate</strong> course, I learned
-                    how to monitor, identify and respond to suspicious activity
-                    in a structured and analytical way. The project helped me
-                    develop a stronger understanding of how security operations
-                    centers (SOCs) function and how incident response teams use
-                    evidence-based approaches to protect systems and users from
-                    attacks. It was a great opportunity to combine technical
-                    tools with critical thinking to build a foundation in
-                    cybersecurity practices.
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div class="col-md-6 mb-4">
-              <div class="card">
+              <div class="card h-100">
                 <div class="card-body">
                   <h3 class="card-title">Personal Portfolio Website</h3>
                   <p class="card-text">
@@ -190,7 +217,7 @@
             </div>
 
             <div class="col-md-6 mb-4">
-              <div class="card">
+              <div class="card h-100">
                 <div class="card-body">
                   <h3 class="card-title">
                     Data Cleaning & Visualization Project
@@ -229,6 +256,31 @@
                 </div>
               </div>
             </div>
+
+            <div class="col-12 mb-4">
+              <div class="card h-100">
+                <div class="card-body">
+                  <h3 class="card-title">Cybersecurity Threat Analysis</h3>
+                  <p class="card-text">
+                    This project gave me hands-on experience in the world of
+                    cybersecurity and network defense. Using
+                    <strong>Wireshark</strong> I analyzed real network traffic
+                    to understand how data moves across systems and how
+                    potential threats can be detected through careful
+                    observation. As part of the
+                    <strong>Cisco CyberOps Associate</strong> course, I learned
+                    how to monitor, identify and respond to suspicious activity
+                    in a structured and analytical way. The project helped me
+                    develop a stronger understanding of how security operations
+                    centers (SOCs) function and how incident response teams use
+                    evidence-based approaches to protect systems and users from
+                    attacks. It was a great opportunity to combine technical
+                    tools with critical thinking to build a foundation in
+                    cybersecurity practices.
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -238,27 +290,35 @@
           <h2 class="text-center mb-4">Skills</h2>
           <ul class="list-unstyled">
             <li>
-              <strong>Programming Languages:</strong> C#, Java, Python, R, SQL
+              <strong>Programming Languages:</strong> JavaScript (ES6+), C#,
+              Python, R, SQL
+            </li>
+            <br />
+            <li>
+              <strong>Frontend Development:</strong> HTML5, CSS3, React,
+              TypeScript, Bootstrap
+            </li>
+            <br />
+            <li>
+              <strong>Backend & Data:</strong> Node.js, RESTful APIs,
+              PostgreSQL, OracleDB
             </li>
             <li>
-              <strong>Web Development:</strong> HTML5, CSS, JavaScript, PHP
+              <strong>Testing & Quality Assurance:</strong> Manual testing,
+              Regression testing, Defect tracking & Bug reporting, Chrome
+              DevTools
             </li>
             <li>
-              <strong>Frameworks & Testing:</strong> Bootstrap, React, JUnit,
-              Selenium
-            </li>
-            <li><strong>Databases:</strong> PostgreSQL, Oracle</li>
-            <li>
-              <strong>Tools & IDEs:</strong> Git, Jira, Confluence, Visual
-              Studio, NetBeans, DataGrip, Power BI
+              <strong>Tools & Collaboration:</strong> Git, GitHub, Jira,
+              Confluence, Visual Studio, DataGrip, Power BI
             </li>
             <li>
-              <strong>Development & QA Practices:</strong> CI/CD, Manual
-              Testing, Regression Testing, Defect Tracking & Reporting,
-              Object-Oriented Programming, Debugging
+              <strong>Development & QA Practices:</strong> CI/CD fundamentals,
+              Agile / Kanban workflows, Clean code and maintainability,
+              Debugging & Troubleshooting
             </li>
             <li>
-              <strong>Languages:</strong> Hungarian (Native), English (B2
+              <strong>Languages:</strong> Hungarian (Native), English (B2 -
               Certified)
             </li>
           </ul>
